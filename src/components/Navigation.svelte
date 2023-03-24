@@ -13,15 +13,16 @@
     href="/app"
     on:mouseenter={() => logoWave(true)}
     on:mouseleave={() => logoWave(false)}
+    class="logo"
   >
     Gronlund.dev</a
   >
   <nav>
     <ul>
-      <li><a href="">About</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Skills</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="" on:click|preventDefault={() => {}}>About</a></li>
+      <li><a href="" on:click|preventDefault={() => {}}>Projects</a></li>
+      <li><a href="" on:click|preventDefault={() => {}}>Skills</a></li>
+      <li><a href="" on:click|preventDefault={() => {}}>Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -34,6 +35,10 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+  }
+
+  .logo {
+    font-weight: bold;
   }
 
   .spacing {
@@ -120,10 +125,10 @@
       transform: rotate(0deg);
     }
     25% {
-      transform: rotate(-35deg);
+      transform: rotate(-20deg);
     }
-    50% {
-      transform: rotate(35deg);
+    75% {
+      transform: rotate(20deg);
     }
     100% {
       transform: rotate(0deg);
