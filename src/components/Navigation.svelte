@@ -7,6 +7,7 @@
 </script>
 
 <header>
+  <div class="spacing" />
   <span class:active={toggleWave}>👋</span>
   <a
     href="/app"
@@ -20,6 +21,7 @@
       <li>Home</li>
       <li>About</li>
       <li>Projects</li>
+      <li>Skills</li>
       <li>Contact</li>
     </ul>
   </nav>
@@ -35,17 +37,19 @@
     width: 100%;
   }
 
-  header span {
-    padding-left: 2rem;
+  .spacing {
+    width: 2rem;
   }
 
   a {
     text-decoration: none;
     color: #282828;
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 1em;
     height: fit-content;
     padding: 2rem 0 2rem 0;
+    margin-left: 0.5rem;
+    font-weight: bold;
   }
 
   nav {
@@ -63,7 +67,7 @@
 
   li {
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
   }
 
