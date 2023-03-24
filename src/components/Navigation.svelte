@@ -18,10 +18,10 @@
   >
   <nav>
     <ul>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Skills</li>
-      <li>Contact</li>
+      <li><a href="">About</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Skills</a></li>
+      <li><a href="">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -48,7 +48,6 @@
     height: fit-content;
     padding: 2rem 0 2rem 0;
     margin-left: 0.5rem;
-    font-weight: bold;
   }
 
   nav {
@@ -68,6 +67,52 @@
     list-style: none;
     font-size: 1rem;
     cursor: pointer;
+    display: inline-block;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 8px 0;
+    color: #353535;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #353535;
+    text-decoration: none;
+  }
+
+  a:before,
+  a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #353535;
+  }
+
+  a:before {
+    left: 0;
+  }
+  a:after {
+    right: 0;
+    background: #353535;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  a:hover:before {
+    background: #353535;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
   }
 
   @keyframes waving {
