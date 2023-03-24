@@ -112,7 +112,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.05);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -124,6 +124,5 @@
   img {
     width: 20%;
     border-radius: 50%;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
   }
 </style>
