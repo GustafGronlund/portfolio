@@ -1,4 +1,5 @@
 <script>
+  import "@fontsource/open-sans";
   import Navigation from "./components/Navigation.svelte";
   import TechStackSection from "./components/TechStackSection.svelte";
 </script>
