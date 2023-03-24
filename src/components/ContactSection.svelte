@@ -24,8 +24,8 @@
             ><div class:active={buttonHover}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="0"
-                height="0"
+                width="0.5rem"
+                height="0.5rem"
                 viewBox="0 0 24 24"
                 class:activeIcon={buttonHover}
                 ><path
@@ -121,9 +121,6 @@
 
   .activeIcon {
     opacity: 1;
-    /* height: 0.5rem;
-    width: 0.5rem; */
     color: black;
-    /* transition: 1s all ease-in-out; */
   }
 </style>
