@@ -140,4 +140,14 @@
     animation-iteration-count: infinite;
     animation-duration: 3s;
   }
+
+  @media (max-width: 650px) {
+    header {
+      padding-top: 1rem;
+      z-index: 999;
+    }
+    header nav {
+      display: none;
+    }
+  }
 </style>

@@ -16,7 +16,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+
+  @media (max-width: 650px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem 0 1rem;
+      min-width: 100vh;
+    }
   }
 </style>
