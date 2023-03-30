@@ -24,7 +24,7 @@
         </section>
       </article>
       <img
-        src="../public/img/profile_picture.jpg"
+        src="./public/img/profile_picture.jpg"
         alt="A profile picture of me."
       />
     </div>
