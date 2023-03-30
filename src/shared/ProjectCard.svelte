@@ -1,18 +1,29 @@
-<div class="card">
-  <div class="project-text" />
-  <div class="project-img" />
-</div>
+<article class="card">
+  <div class="project-text">
+    <h4>Project Title</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam
+      repudiandae ab aperiam. Nesciunt possimus unde reiciendis doloribus
+      pariatur fuga tempore harum debitis culpa, eius repudiandae. Ullam alias
+      tempora harum!
+    </p>
+  </div>
+  <figure>
+    <div class="project-img" />
+  </figure>
+</article>
 
 <style>
   .card {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
-    background: #5d6cf9;
     display: flex;
     flex-direction: row;
-    padding: 2rem;
     cursor: pointer;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.05);
+    justify-self: center;
+    background: white;
   }
 
   .project-img {
@@ -20,5 +31,9 @@
     min-width: 50%;
     background: lightyellow;
     border-radius: 1rem;
+  }
+
+  .project-text {
+    padding-right: 2rem;
   }
 </style>
